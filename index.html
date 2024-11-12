@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Desenvolvedor Front-End</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+  <nav>
+      <a href="#hero" class="logo">Meu Portfólio</a>
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">☰</label> </input> <ul class="menu">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+      </ul>
+  </nav>
+</header>
+
+    <section id="hero" class="hero">
+        <div class="container">
+            <h1>Olá, eu sou <span class="nome">Seu Nome</span></h1>
+            <h2>Desenvolvedor Front-End</h2>
+            <p>Apaixonado por criar experiências web incríveis.</p>
+            <a href="#contato" class="botao">Entre em contato</a>
+        </div>
+
+    </section>
+
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <h2>Sobre mim</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vitae ultricies malesuada, elit enim tincidunt libero, at volutpat purus dui vitae diam. </p>
+            <p>Cras in justo eu dolor luctus bibendum. Donec euismod, sapien a euismod vehicula, nisi justo pretium enim, non dignissim metus urna id quam.  </p>
+        </div>
+    </section>
+
+    <section id="habilidades" class="habilidades">
+        <div class="container">
+            <h2>Habilidades</h2>
+            <ul>
+                <li><span>HTML</span></li>
+                <li><span>CSS</span></li>
+                <li><span>JavaScript</span></li>
+                <li><span>React</span></li>
+                <li><span>Git</span></li>
+                <li><span>SASS</span></li>
+                <li><span>Responsividade</span></li>
+                <li><span>Acessibilidade</span></li>
+
+            </ul>
+        </div>
+    </section>
+
+
+    <section id="projetos" class="projetos">
+        <div class="container">
+            <h2>Projetos</h2>
+          <div class="projeto">
+            <img src="placeholder.jpg" alt="Projeto 1">
+            <h3>Projeto 1</h3>
+            <p>Descrição do projeto 1. Lorem ipsum dolor sit amet.</p>
+            <a href="#" class="botao">Ver Projeto</a>
+          </div>
+          <div class="projeto">
+            <img src="placeholder.jpg" alt="Projeto 2">
+            <h3>Projeto 2</h3>
+            <p>Descrição do projeto 2. Lorem ipsum dolor sit amet.</p>
+            <a href="#" class="botao">Ver Projeto</a>
+          </div>
+          <div class="projeto">
+              <img src="placeholder.jpg" alt="Projeto 3">
+              <h3>Projeto 3</h3>
+              <p>Descrição do projeto 3. Lorem ipsum dolor sit amet.</p>
+              <a href="#" class="botao">Ver Projeto</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contato" class="contato">
+        <div class="container">
+            <h2>Contato</h2>
+            <form action="#">
+                <input type="text" placeholder="Seu nome" required>
+                <input type="email" placeholder="Seu e-mail" required>
+                <textarea placeholder="Sua mensagem" required></textarea>
+                <button type="submit" class="botao">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>Desenvolvido por Seu Nome - © 2023</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
