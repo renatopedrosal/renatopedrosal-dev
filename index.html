@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt-BR" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/ico" href="/renatopedrosal-dev/relucode.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Renato Pedrosa Leite | Desenvolvedor Full-Stack</title>
+    <script>
+      // Ao carregar a página ou ao mudar o tema, é melhor adicionar inline no `head` para evitar FOUC
+      if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark')
+      } else {
+        document.documentElement.classList.remove('dark')
+      }
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              // Light Theme (default)
+              background: '#F8F9FA',
+              secondary: '#FFFFFF',
+              accent: '#007BFF',
+              highlight: '#212529',
+              'secondary-text': '#6C757D',
+
+              // Dark Theme (for reference in dark: prefixes)
+              'dark-background': '#040D12',
+              'dark-secondary': '#183D3D',
+              'dark-accent': '#5C8374',
+              'dark-highlight': '#93B1A6',
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              mono: ['Roboto Mono', 'monospace'],
+            },
+            boxShadow: {
+              'neumorphic-light': '5px 5px 10px #d1d9e6, -5px -5px 10px #ffffff',
+              'neumorphic-dark': '5px 5px 10px #020608, -5px -5px 10px #06141c',
+              'neumorphic-inset-light': 'inset 5px 5px 10px #d1d9e6, inset -5px -5px 10px #ffffff',
+              'neumorphic-inset-dark': 'inset 5px 5px 10px #020608, inset -5px -5px 10px #06141c',
+            }
+          }
+        }
+      }
+    </script>
+
+  <link rel="stylesheet" href="/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.542.0",
+    "react-icons/": "https://aistudiocdn.com/react-icons@^5.5.0/",
+    "react-icons": "https://aistudiocdn.com/react-icons@^5.5.0",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.12"
+  }
+}
+</script>
+    <script type="module" crossorigin src="/renatopedrosal-dev/assets/index-vciBpJlI.js"></script>
+    <link rel="stylesheet" crossorigin href="/renatopedrosal-dev/assets/index-FZNEhskS.css">
+  </head>
+  <body class="bg-background text-highlight dark:bg-dark-background dark:text-dark-highlight antialiased">
+    <div id="root"></div>
+  </body>
+</html>
