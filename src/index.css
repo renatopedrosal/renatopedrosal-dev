@@ -1,0 +1,36 @@
+/* Prevent horizontal scrollbar */
+body {
+  overflow-x: hidden;
+}
+/* Webkit Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f8f9fa; /* light:background */
+}
+
+html.dark ::-webkit-scrollbar-track {
+  background: #040d12; /* dark:dark-background */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #d1d5db; /* A neutral gray for light theme */
+  border-radius: 10px;
+}
+
+html.dark ::-webkit-scrollbar-thumb {
+  background: #183d3d; /* dark:dark-secondary */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af; /* A darker gray for light theme hover */
+}
+
+html.dark ::-webkit-scrollbar-thumb:hover {
+  background: #5c8374; /* dark:dark-accent */
+}

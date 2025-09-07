@@ -1,0 +1,18 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Cadeira Gamer",
+      "description": "Cadeira ergonômica com apoio lombar",
+      "price": 899.9,
+      "stock": 12
+    },
+    {
+      "id": 2,
+      "name": "Mouse Óptico",
+      "description": "Mouse com sensor de alta precisão",
+      "price": 79.9,
+      "stock": 45
+    }
+  ]
+}
