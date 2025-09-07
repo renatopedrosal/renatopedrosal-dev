@@ -1,5 +1,5 @@
-import React from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
+import React from 'react';
 
 export const Hero: React.FC = () => {
     const { scrollYProgress } = useScroll();
@@ -20,7 +20,7 @@ export const Hero: React.FC = () => {
                         transition={{ duration: 8, repeat: Infinity, ease: 'linear' }}
                     />
                     <motion.img
-                        src="https://picsum.photos/seed/avatar/200/200"
+                        src="/images/renato.jpeg"
                         alt="Renato Pedrosa Leite"
                         className="w-full h-full object-cover rounded-full p-1"
                         animate={{
@@ -56,7 +56,7 @@ export const Hero: React.FC = () => {
                     transition={{ duration: 0.5, delay: 0.6 }}
                 >
                     <motion.a
-                        href="/cv.pdf"
+                        href="/pdf/cv-renato-pedrosa.pdf"
                         download
                         className="bg-accent text-white dark:bg-dark-accent dark:text-dark-background font-bold py-3 px-8 rounded-full transition-all duration-300 hover:opacity-90 shadow-lg"
                         whileHover={{ scale: 1.05 }}

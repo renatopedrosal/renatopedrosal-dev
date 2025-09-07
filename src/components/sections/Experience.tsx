@@ -41,7 +41,7 @@ export const Experience: React.FC = () => {
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
                 >
-                    {isAlternating ? <FaStream size={20} /> : <FaColumns size={20} />}
+                    {isAlternating ? <FaColumns size={20} /> : <FaStream size={20} />}
                 </motion.button>
             </div>
             
@@ -49,7 +49,7 @@ export const Experience: React.FC = () => {
                 <div className="absolute left-1/2 -translate-x-1/2 h-full w-1 bg-gray-200 dark:bg-dark-secondary rounded-full"></div>
                 
                 {experience.map((item, index) => {
-                    const isRightSide = isAlternating && index % 2 !== 0;
+                    const isRightSide = !isAlternating && index % 2 !== 0;
 
                     return (
                         <motion.div

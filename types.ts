@@ -22,6 +22,7 @@ export interface Project {
     stack: string[];
     image: string;
     results: string;
+    link?: string;
 }
 
 export interface Badge {

@@ -1,5 +1,5 @@
 import { AnimatePresence, motion } from 'framer-motion';
-import { X } from 'lucide-react';
+import { ExternalLink, X } from 'lucide-react';
 import React from 'react';
 import type { Project } from '../../../types';
 
@@ -38,7 +38,22 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, isOpen, onC
                         </button>
                         <img src={project.image} alt={project.title} className="w-full h-64 object-cover" />
                         <div className="p-8">
-                            <h2 className="text-3xl font-bold text-highlight dark:text-white mb-4">{project.title}</h2>
+                             <div className="flex justify-between items-start gap-4 mb-4">
+                                <h2 className="text-3xl font-bold text-highlight dark:text-white">{project.title}</h2>
+                                {project.link && (
+                                    <motion.a
+                                        href={project.link}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="flex-shrink-0 bg-accent text-white dark:bg-dark-accent dark:text-dark-background font-bold py-2 px-4 rounded-full transition-all duration-300 hover:opacity-90 shadow-lg inline-flex items-center gap-2 text-sm"
+                                        whileHover={{ scale: 1.05 }}
+                                        whileTap={{ scale: 0.95 }}
+                                    >
+                                        Acessar
+                                        <ExternalLink size={16} />
+                                    </motion.a>
+                                )}
+                            </div>
                             <div className="mb-6">
                                 <h4 className="font-semibold text-accent dark:text-dark-accent mb-2">Tecnologias Utilizadas</h4>
                                 <div className="flex flex-wrap gap-2">

@@ -5,9 +5,9 @@ import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa';
 import { SectionWrapper } from '../ui/SectionWrapper';
 
 const socialLinks = [
-    { icon: FaLinkedin, href: 'https://linkedin.com' },
-    { icon: FaGithub, href: 'https://github.com' },
-    { icon: FaEnvelope, href: 'mailto:email@example.com' },
+    { icon: FaLinkedin, href: 'https://linkedin.com/in/renatopedrosa/' },
+    { icon: FaGithub, href: 'https://github.com/renatopedrosal' },
+    { icon: FaEnvelope, href: 'mailto:renatopedrosaleite.rp@gmail.com' },
 ];
 
 export const Contact: React.FC = () => {

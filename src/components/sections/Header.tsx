@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import React, { useEffect, useState } from 'react';
 import { ThemeToggle } from '../ui/ThemeToggle';
 
 const navItems = [
@@ -43,11 +43,11 @@ export const Header: React.FC = () => {
         >
             <nav className="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
                 <a 
-                    href="#hero" 
-                    onClick={(e) => handleNavClick(e, '#hero')}
-                    className="text-xl font-bold text-highlight dark:text-dark-highlight hover:text-accent dark:hover:text-dark-accent transition-colors"
+                  href="#hero" 
+                  onClick={(e) => handleNavClick(e, '#hero')}
+                  className="text-xl font-bold text-highlight dark:text-dark-highlight hover:text-accent dark:hover:text-dark-accent transition-colors flex items-center"
                 >
-                    Renato P. Leite
+                  <code>&lt;/renatopedrosal&gt;</code>
                 </a>
                 <div className="flex items-center space-x-8">
                     <ul className="hidden md:flex space-x-8">

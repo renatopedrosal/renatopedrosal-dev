@@ -1,4 +1,5 @@
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
+import { ExternalLink } from 'lucide-react';
 import React, { useRef } from 'react';
 import type { Project } from '../../../types';
 
@@ -65,6 +66,22 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) =>
                         <span key={tech} className="bg-accent/20 text-accent dark:bg-dark-accent/20 dark:text-dark-accent text-xs font-semibold px-2 py-1 rounded-full">{tech}</span>
                     ))}
                 </div>
+                 {project.link && (
+                    <div className="mt-4">
+                        <motion.a
+                            href={project.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={(e) => e.stopPropagation()}
+                            className="inline-flex items-center gap-2 text-accent dark:text-dark-accent font-semibold group"
+                            whileHover={{ gap: '10px' }}
+                            transition={{ type: 'spring', stiffness: 400 }}
+                        >
+                            Acessar Projeto
+                            <ExternalLink size={16} />
+                        </motion.a>
+                    </div>
+                )}
             </div>
         </motion.div>
     );
