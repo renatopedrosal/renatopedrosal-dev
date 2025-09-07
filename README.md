@@ -1,8 +1,7 @@
 
 # Portfólio Moderno e Animado - Renato Pedrosa Leite
 
-![Demonstração do Portfólio](https://i.imgur.com/your-demo.gif)
-*Substitua o link acima por um GIF ou vídeo de demonstração do seu portfólio.*
+https://renatopedrosal.github.io/renatopedrosal-dev/
 
 ## 📜 Descrição
 
