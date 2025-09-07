@@ -4,6 +4,8 @@ import React from 'react';
 export const Hero: React.FC = () => {
     const { scrollYProgress } = useScroll();
     const y = useTransform(scrollYProgress, [0, 1], [0, 200]);
+    const imageUrl = import.meta.env.BASE_URL + '/images/renato.jpeg';
+    const cvUrl = import.meta.env.BASE_URL + '/pdf/cv-renato-pedrosa.pdf';
 
     return (
         <section id="hero" className="min-h-screen flex flex-col items-center justify-center text-center relative overflow-hidden">
@@ -20,7 +22,7 @@ export const Hero: React.FC = () => {
                         transition={{ duration: 8, repeat: Infinity, ease: 'linear' }}
                     />
                     <motion.img
-                        src="/images/renato.jpeg"
+                        src={imageUrl}
                         alt="Renato Pedrosa Leite"
                         className="w-full h-full object-cover rounded-full p-1"
                         animate={{
@@ -56,7 +58,7 @@ export const Hero: React.FC = () => {
                     transition={{ duration: 0.5, delay: 0.6 }}
                 >
                     <motion.a
-                        href="/pdf/cv-renato-pedrosa.pdf"
+                        href={cvUrl}
                         download
                         className="bg-accent text-white dark:bg-dark-accent dark:text-dark-background font-bold py-3 px-8 rounded-full transition-all duration-300 hover:opacity-90 shadow-lg"
                         whileHover={{ scale: 1.05 }}

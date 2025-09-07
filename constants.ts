@@ -144,7 +144,7 @@ export const projects: Project[] = [
     longDescription:
       "Uma solução robusta para pequenas e médias empresas, projetada para otimizar processos de negócios. Inclui módulos de faturamento, controle de estoque, CRM e relatórios financeiros detalhados. A interface é intuitiva e responsiva.",
     stack: ["Java", "Spring Boot", "Angular", "PostgreSQL", "Docker"],
-    image: "/images/sgc.png",
+    image: import.meta.env.BASE_URL + "/images/sgc.png",
     results:
       "Aumento de 30% na eficiência operacional dos clientes piloto e redução de 15% nos custos de gestão de estoque.",
     link: "https://sgc.net.br",
@@ -157,7 +157,7 @@ export const projects: Project[] = [
     longDescription:
       "Facilita a comunicação e a gestão de condomínios. Moradores podem reservar áreas comuns e relatar problemas, enquanto síndicos gerenciam finanças, comunicados e manutenções. Segurança e usabilidade são os pilares do projeto.",
     stack: ["PHP", "Laravel", "React", "MySQL"],
-    image: "/images/reserva-ypes-2.png",
+    image: import.meta.env.BASE_URL + "/images/reserva-ypes-2.png",
     results:
       "Melhora de 50% na comunicação interna e 40% de redução no tempo gasto com tarefas administrativas do síndico.",
     link: "https://reservadosypes2.com.br",
@@ -170,7 +170,7 @@ export const projects: Project[] = [
     longDescription:
       "Uma aplicação desktop e mobile para armazenar senhas e informações sensíveis com criptografia de ponta a ponta. Oferece geração de senhas fortes, auto-preenchimento e auditoria de segurança das credenciais salvas.",
     stack: ["TypeScript", "React Native", "Node.js", "SQLite"],
-    image: "/images/decor-design.png",
+    image: import.meta.env.BASE_URL + "/images/decor-design.png",
     results:
       "Aplicação com alto nível de adoção em nicho de segurança, com feedback positivo sobre a interface e a robustez da criptografia.",
   },
@@ -182,7 +182,7 @@ export const projects: Project[] = [
     longDescription:
       "Desenvolvimento de páginas de aterrissagem focadas em performance e experiência do usuário. Cada projeto envolve análise de público-alvo, design responsivo, otimização de SEO e testes A/B para maximizar as taxas de conversão.",
     stack: ["React", "Next.js", "Tailwind CSS", "Framer Motion"],
-    image: "/images/relucode-site.png",
+    image: import.meta.env.BASE_URL + "/images/relucode-site.png",
     results:
       "Média de aumento de 25% na taxa de conversão para clientes em campanhas de marketing digital.",
     link: "https://relucode.com.br",
@@ -195,7 +195,7 @@ export const projects: Project[] = [
     longDescription:
       "Criação de fluxos de trabalho automatizados usando n8n para conectar diferentes APIs e serviços. As automações variam desde a sincronização de dados entre plataformas até a orquestração de processos de marketing e vendas complexos.",
     stack: ["n8n", "JavaScript", "REST APIs", "Webhooks"],
-    image: "/images/automacao.webp",
+    image: import.meta.env.BASE_URL + "/images/automacao.webp",
     results:
       "Redução de até 80% do tempo gasto em tarefas manuais e repetitivas, liberando equipes para focarem em atividades estratégicas.",
   },
